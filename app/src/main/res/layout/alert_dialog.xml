@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_light_gray"
+    android:padding="@dimen/_10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:padding="@dimen/_5dp"
+        android:textSize="@dimen/font_20sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20dp">
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+
+        <TextView
+            android:padding="@dimen/_5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textStyle="normal"
+            android:textSize="@dimen/font_16sp"
+            android:text="Description"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20dp">
+        <CheckBox
+            android:id="@+id/checkbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+
+        <TextView
+            android:padding="@dimen/_5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textStyle="normal"
+            android:textSize="@dimen/font_16sp"
+            android:text="kljas"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnGoBack"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_app_bg"
+        android:textColor="@color/color_white"
+        android:layout_marginHorizontal="@dimen/_30dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_16sp"
+        android:layout_marginBottom="@dimen/_30dp"
+        android:textAllCaps="false"
+        android:text="ok"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_app_bg"
+        android:layout_marginHorizontal="@dimen/_30dp"
+        android:textColor="@color/color_white"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_16sp"
+        android:layout_marginBottom="@dimen/_30dp"
+        android:textAllCaps="false"
+        android:text="submit"/>
+
+</LinearLayout>
