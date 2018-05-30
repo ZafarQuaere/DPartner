@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytBottomBar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@color/color_light_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/lytHomeBar"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textBottomHomeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:shadowColor="#99000000"
+                android:shadowRadius="2"
+                android:textSize="@dimen/font_30sp"
+                android:textStyle="bold"  />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/textHomeLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/home"
+                android:textSize="@dimen/font_11sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytIceOrderBar"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textBottomIceOrderIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:shadowColor="#99000000"
+                android:shadowRadius="2"
+                android:textSize="@dimen/font_30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/textIceOrderLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/order_list"
+                android:textSize="@dimen/font_11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytRepairBar"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textBottomEquipRepairIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:shadowColor="#99000000"
+                android:shadowRadius="2"
+                android:textSize="@dimen/font_30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/textRepairLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/veg"
+                android:textSize="@dimen/font_11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytFeedbackBar"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textBottomShareFeedIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:shadowColor="#99000000"
+                android:shadowRadius="2"
+                android:textSize="@dimen/font_30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/textFeedbackLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/non_veg"
+                android:textSize="@dimen/font_11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytHistoryBar"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textBottomHistoryIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:shadowColor="#99000000"
+                android:shadowRadius="2"
+                android:textSize="@dimen/font_30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/textHistoryLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/history"
+                android:textSize="@dimen/font_11sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
