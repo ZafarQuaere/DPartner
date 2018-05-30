@@ -1,1 +1,13 @@
-/build
+# Add any directories, files, or patterns you don't want to be tracked by version control
+.gradle/
+.idea/
+build/
+/local.properties
+app/libs/
+app/src/androidTest/
+app/src/main/java/com/reddyice/customer/model/request/
+app/src/test/
+libs/
+src/androidTest/
+src/main/java/com/reddyice/customer/model/request/
+src/test/
