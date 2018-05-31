@@ -5,4 +5,5 @@
     <string name="veg">Veg</string>
     <string name="non_veg">Non Veg</string>
     <string name="history">History</string>
+    <string name="key_serializable">key_serializable</string>
 </resources>
