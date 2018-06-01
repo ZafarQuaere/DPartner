@@ -1,10 +1,8 @@
-package dfoode.partnerapplication;
+package dfoode.partnerapplication.activities;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import dfoode.partnerapplication.R;
 import dfoode.partnerapplication.utils.Utils;
 
 
@@ -45,7 +44,9 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                validationField();
+                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                finish();
+                //validationField();
             }
         });
         lytParent.setOnClickListener(new View.OnClickListener(){

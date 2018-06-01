@@ -19,9 +19,6 @@ import dfoode.partnerapplication.interfaces.OnDialogButtonClicked;
 public class LogUtils {
 
 
-
-    public static boolean COMING_FROM_ORDER_CREATION = true;
-
     public static void showToast(Context context, String message) {
         if (context != null) {
             final Toast toast = Toast.makeText(context, message, Toast.LENGTH_LONG);

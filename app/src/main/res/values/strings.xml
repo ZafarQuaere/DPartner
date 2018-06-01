@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">PartnerApplication</string>
     <string name="home">Home</string>
-    <string name="order_list">Orders</string>
+    <string name="orders">Orders</string>
     <string name="veg">Veg</string>
     <string name="non_veg">Non Veg</string>
     <string name="history">History</string>
     <string name="key_serializable">key_serializable</string>
+    <string name="order_list">Order List</string>
+    <string name="order_detail">Order Details</string>
 </resources>

@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:textColor="@color/color_black"
-                android:text="@string/order_list"
+                android:text="@string/orders"
                 android:textSize="@dimen/font_11sp" />
         </LinearLayout>
 
