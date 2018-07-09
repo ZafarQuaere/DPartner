@@ -35,5 +35,6 @@
     <color name="color_light_background">#FFEBF5FE</color>
 
     <color name="transparent">#00000000</color>
+    <color name="appColorWhite">#ffffff</color>
 
 </resources>

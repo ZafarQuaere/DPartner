@@ -8,14 +8,22 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import dfoode.partnerapplication.R;
+import dfoode.partnerapplication.utils.Utils;
 
-public class OrderDetailFragment extends Fragment {
+public class VegOrdersFragment extends Fragment {
 
     private View view;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_order_detail,null,false);
+        view = inflater.inflate(R.layout.fragment_veg_orders,null,false);
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Utils.updateBottomBar(getActivity(), this.getClass().getSimpleName());
+        Utils.updateActionBar(getActivity(),this.getClass().getSimpleName(),getString(R.string.veg_orders),null,null);
     }
 }

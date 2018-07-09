@@ -2,6 +2,13 @@
 <resources>
 
 
+    <dimen name="fontActionbarTitleSize">@dimen/font_20sp</dimen>
+    <dimen name="fontTextSmallSize">@dimen/font_12sp</dimen>
+    <dimen name="fontTextMediumSize">@dimen/font_14sp</dimen>
+    <dimen name="fontTextLargeSize">@dimen/font_16sp</dimen>
+    <dimen name="fontTextXLargeSize">@dimen/font_18sp</dimen>
+    <dimen name="fontTextXXLargeSize">@dimen/font_20sp</dimen>
+
     <dimen name="_0dp">0dp</dimen>
     <dimen name="_1dp">1dp</dimen>
     <dimen name="_2dp">2dp</dimen>

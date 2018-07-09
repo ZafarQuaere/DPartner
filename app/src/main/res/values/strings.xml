@@ -8,4 +8,9 @@
     <string name="key_serializable">key_serializable</string>
     <string name="order_list">Order List</string>
     <string name="order_detail">Order Details</string>
+    <string name="please_check_network_connection">Something went wrong.Please Check your internet connection.</string>
+    <string name="non_veg_orders">Non Veg Orders</string>
+    <string name="veg_orders">Veg Orders</string>
+    <string name="title">Title</string>
+    <string name="order_history">Order History</string>
 </resources>

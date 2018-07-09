@@ -1,11 +1,10 @@
 package dfoode.partnerapplication.activities;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import dfoode.partnerapplication.R;
-import dfoode.partnerapplication.fragments.OrderListFragment;
+import dfoode.partnerapplication.fragments.HomeFragment;
 import dfoode.partnerapplication.utils.LogUtils;
 import dfoode.partnerapplication.utils.Utils;
 
@@ -15,7 +14,12 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Utils.moveToFragment(MainActivity.this,new OrderListFragment(),null);
+        Utils.moveToFragment(MainActivity.this,new HomeFragment(),null);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 
     @Override

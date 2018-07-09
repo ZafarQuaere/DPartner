@@ -43,16 +43,16 @@
                 android:gravity="center_horizontal"
                 android:textColor="@color/color_black"
                 android:text="@string/home"
-                android:textSize="@dimen/font_10sp" />
+                android:textSize="@dimen/fontTextSmallSize" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/lytIceOrderBar"
+            android:id="@+id/lytOrders"
             android:layout_width="@dimen/_0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
             android:layout_marginTop="@dimen/_5dp"
             android:orientation="vertical">
@@ -72,11 +72,11 @@
                 android:gravity="center_horizontal"
                 android:textColor="@color/color_black"
                 android:text="@string/orders"
-                android:textSize="@dimen/font_11sp" />
+                android:textSize="@dimen/fontTextSmallSize" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/lytRepairBar"
+            android:id="@+id/lytVegOrder"
             android:layout_width="@dimen/_0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -100,11 +100,11 @@
                 android:gravity="center_horizontal"
                 android:textColor="@color/color_black"
                 android:text="@string/veg"
-                android:textSize="@dimen/font_11sp" />
+                android:textSize="@dimen/fontTextSmallSize" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/lytFeedbackBar"
+            android:id="@+id/lytNonvegOrders"
             android:layout_width="@dimen/_0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -128,7 +128,7 @@
                 android:gravity="center_horizontal"
                 android:textColor="@color/color_black"
                 android:text="@string/non_veg"
-                android:textSize="@dimen/font_11sp" />
+                android:textSize="@dimen/fontTextSmallSize" />
         </LinearLayout>
 
         <LinearLayout
@@ -156,7 +156,7 @@
                 android:gravity="center_horizontal"
                 android:textColor="@color/color_black"
                 android:text="@string/history"
-                android:textSize="@dimen/font_11sp" />
+                android:textSize="@dimen/fontTextSmallSize" />
         </LinearLayout>
 
     </LinearLayout>

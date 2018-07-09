@@ -7,7 +7,7 @@
     android:focusableInTouchMode="true">
 
     <include
-        android:id="@+id/toolbar_colored"
+        android:id="@+id/toolbar"
         layout="@layout/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
