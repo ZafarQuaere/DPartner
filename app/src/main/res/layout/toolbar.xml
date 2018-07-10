@@ -17,6 +17,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginLeft="@dimen/_10dp"
+        android:background="@drawable/arrow_back"
         android:visibility="visible" />
 
     <ImageView

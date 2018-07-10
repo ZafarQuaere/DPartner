@@ -284,11 +284,12 @@ public class Utils {
         RelativeLayout toolbarLayout = (RelativeLayout) activity.findViewById(R.id.toolbar);
         TextView textTitle = (TextView) toolbarLayout.findViewById(R.id.textTitle);
         TextView textBack = (TextView) toolbarLayout.findViewById(R.id.textBack);
-
         textTitle.setText(dynamicTitle);
-        if (className.equals(new HomeFragment().getClass().getSimpleName())) {
+        textBack.setVisibility(View.GONE);
 
-            textTitle.setOnClickListener(new View.OnClickListener() {
+        if (className.equals(new HomeFragment().getClass().getSimpleName())) {
+            textBack.setVisibility(View.GONE);
+            textBack.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     //activity.startActivity(new Intent(activity, LoginActivity.class));
@@ -296,18 +297,38 @@ public class Utils {
                 }
             });
         } else if (className.equals(new OrdersFragment().getClass().getSimpleName())) {
-
+            textBack.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    activity.onBackPressed();
+                }
+            });
         }
 
         else if (className.equals(new VegOrdersFragment().getClass().getSimpleName())) {
-
+            textBack.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    activity.onBackPressed();
+                }
+            });
         }
 
         else if (className.equals(new NonVegOrdersFragment().getClass().getSimpleName())) {
-
+            textBack.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    activity.onBackPressed();
+                }
+            });
         }
         else if (className.equals(new HistoryFragment().getClass().getSimpleName())) {
-
+            textBack.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    activity.onBackPressed();
+                }
+            });
         }
     }
 
