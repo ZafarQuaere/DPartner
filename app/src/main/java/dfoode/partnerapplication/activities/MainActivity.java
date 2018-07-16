@@ -24,17 +24,14 @@ public class MainActivity extends Activity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
 
         int count = getFragmentManager().getBackStackEntryCount();
         LogUtils.DEBUG("BackStack Count : " +count);
+         if (count > 0){
 
-        if (count == 0){
-            finish();
-        }
-        else  if (count > 0){
-
-        }
+        }else {
+             super.onBackPressed();
+         }
 
     }
 }
