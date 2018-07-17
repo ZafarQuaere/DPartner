@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PartnerApplication</string>
+    <string name="app_name">DPartner</string>
     <string name="home">Home</string>
     <string name="orders">Orders</string>
     <string name="veg">Veg</string>
