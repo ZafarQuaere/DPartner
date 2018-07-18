@@ -1,6 +1,9 @@
 package dfoode.partnerapplication.activities;
 
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.content.Context;
 import android.os.Bundle;
 
 import dfoode.partnerapplication.R;
@@ -10,11 +13,13 @@ import dfoode.partnerapplication.utils.Utils;
 
 public class MainActivity extends Activity {
 
+    private Activity mContext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Utils.moveToFragment(MainActivity.this,new HomeFragment(),null);
+        mContext = this;
+        Utils.moveToFragment(MainActivity.this, new HomeFragment(), null);
     }
 
     @Override
@@ -24,16 +29,20 @@ public class MainActivity extends Activity {
 
     @Override
     public void onBackPressed() {
-
-
+        getFragmentManager().popBackStackImmediate();
         int count = getFragmentManager().getBackStackEntryCount();
-        LogUtils.DEBUG("BackStack Count : " +count);
-        if (count == 0){
+        LogUtils.DEBUG("BackStack Count : " + count);
+        if (count == 0) {
             finish();
+        } else {
+            if (count > 0) {
+                FragmentManager.BackStackEntry entry = getFragmentManager().getBackStackEntryAt(getFragmentManager().getBackStackEntryCount() - 1);//top
+                Fragment fragName = (Fragment)getFragmentManager().findFragmentByTag(entry.getName());
+                LogUtils.DEBUG("BackStack FragName : " + entry.getName());
+                if (entry.getName().equals(new HomeFragment().getClass().getSimpleName())) {
+                    Utils.updateActionBar(mContext, this.getClass().getSimpleName(), getString(R.string.home), null, null);
+                }
+            }
         }
-        else  if (count > 0){
-            super.onBackPressed();
-        }
-
     }
 }

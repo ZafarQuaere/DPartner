@@ -13,4 +13,6 @@
     <string name="veg_orders">Veg Orders</string>
     <string name="title">Title</string>
     <string name="order_history">Order History</string>
+    <string name="key_shared_prefs">key_shared_prefs</string>
+    <string name="key_logged_in">key_logged_in</string>
 </resources>

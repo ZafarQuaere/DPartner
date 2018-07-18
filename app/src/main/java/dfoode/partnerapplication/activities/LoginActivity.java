@@ -1,5 +1,6 @@
 package dfoode.partnerapplication.activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -23,15 +24,20 @@ public class LoginActivity extends AppCompatActivity {
     private Button btnLogin;
     private String userId;
     private String password;
+    private Context mContext;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
-        initUI();
-
-
+        mContext = this;
+        if (Utils.isLoggedIn(mContext)){
+            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+            finish();
+        }else {
+            initUI();
+        }
     }
 
     private void initUI() {
@@ -44,9 +50,8 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                finish();
-                //validationField();
+
+                validationField();
             }
         });
         lytParent.setOnClickListener(new View.OnClickListener(){
@@ -67,6 +72,7 @@ public class LoginActivity extends AppCompatActivity {
         } else if (password.equals("") || password.equals(null)) {
             Toast.makeText(LoginActivity.this, "please enter password", Toast.LENGTH_SHORT).show();
         } else {
+            Utils.setLoggedIn(mContext,true);
             startActivity(new Intent(LoginActivity.this, MainActivity.class));
             finish();
         }

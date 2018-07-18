@@ -5,7 +5,6 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Context;
-import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -340,7 +339,7 @@ public class Utils {
         }
         FragmentManager fm = ((Activity) activity).getFragmentManager();
 
-        for (int i = fm.getBackStackEntryCount() - 1; i >= 0; i--) {
+        for (int i = fm.getBackStackEntryCount()-1 ; i > 0; i--) {
             String fragmentName = (fm.getBackStackEntryAt(i)).getName();
             if (!fragmentName.equals(new HomeFragment().getClass().getName())) {
                 fm.popBackStack();
@@ -353,4 +352,23 @@ public class Utils {
         updateBottomBar(activity, new HomeFragment().getClass().getSimpleName());
     }
 
+    public static void setLoggedIn(Context mContext, boolean b) {
+        if (mContext == null)
+            return;
+        AppSharedPrefs prefs = AppSharedPrefs.getInstance(mContext);
+        prefs.put(mContext.getString(R.string.key_logged_in),b);
+    }
+
+    public static boolean isLoggedIn(Context context) {
+        AppSharedPrefs prefs = AppSharedPrefs.getInstance(context);
+        boolean isLogIn = false;
+        try {
+            isLogIn = (boolean)prefs.get(context.getString(R.string.key_logged_in));
+        } catch (Exception e) {
+            e.printStackTrace();
+            return isLogIn;
+        }
+        return isLogIn;
+
+    }
 }
