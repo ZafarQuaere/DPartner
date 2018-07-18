@@ -21,29 +21,29 @@
             android:id="@+id/lytHomeBar"
             android:layout_width="@dimen/_0dp"
             android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5dp"
             android:layout_weight="1"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
-            android:layout_marginTop="@dimen/_5dp"
             android:orientation="vertical">
 
-            <ImageView
+            <TextView
                 android:id="@+id/textBottomHomeIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_home_colored"
-                android:textStyle="bold"  />
+                android:background="@drawable/ic_home_colored"
+                android:textStyle="bold" />
 
             <TextView
-                android:visibility="visible"
                 android:id="@+id/textHomeLable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:textColor="@color/color_black"
                 android:text="@string/home"
-                android:textSize="@dimen/fontTextSmallSize" />
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/fontTextSmallSize"
+                android:visibility="visible" />
 
         </LinearLayout>
 
@@ -51,112 +51,116 @@
             android:id="@+id/lytOrders"
             android:layout_width="@dimen/_0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:foreground="?attr/selectableItemBackgroundBorderless"
-            android:clickable="true"
             android:layout_marginTop="@dimen/_5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
             android:orientation="vertical">
 
-            <ImageView
+            <TextView
+                android:id="@+id/textIconOrders"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_home_black"
-                android:textStyle="bold"  />
+                android:background="@drawable/ic_home_black"
+                android:textStyle="bold" />
 
             <TextView
-                android:visibility="visible"
-                android:id="@+id/textIceOrderLable"
+                android:id="@+id/textOrderLable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:textColor="@color/color_black"
                 android:text="@string/orders"
-                android:textSize="@dimen/fontTextSmallSize" />
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/fontTextSmallSize"
+                android:visibility="visible" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/lytVegOrder"
             android:layout_width="@dimen/_0dp"
             android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5dp"
             android:layout_weight="1"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
-            android:layout_marginTop="@dimen/_5dp"
             android:orientation="vertical">
 
-            <ImageView
+            <TextView
+                android:id="@+id/textBottomVegIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_home_black"
-                android:textStyle="bold"  />
+                android:background="@drawable/ic_home_black"
+                android:textStyle="bold" />
 
             <TextView
-                android:visibility="visible"
-                android:id="@+id/textRepairLable"
+                android:id="@+id/textVegLable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:textColor="@color/color_black"
                 android:text="@string/veg"
-                android:textSize="@dimen/fontTextSmallSize" />
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/fontTextSmallSize"
+                android:visibility="visible" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/lytNonvegOrders"
             android:layout_width="@dimen/_0dp"
             android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5dp"
             android:layout_weight="1"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
-            android:layout_marginTop="@dimen/_5dp"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <TextView
+                android:id="@+id/textBottomNonVegIcon"
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="@dimen/_30dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_home_black"
-                android:textStyle="bold"  />
+                android:background="@drawable/ic_home_colored"
+                android:textStyle="bold" />
 
             <TextView
-                android:visibility="visible"
-                android:id="@+id/textFeedbackLable"
+                android:id="@+id/textNonVegLable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:textColor="@color/color_black"
                 android:text="@string/non_veg"
-                android:textSize="@dimen/fontTextSmallSize" />
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/fontTextSmallSize"
+                android:visibility="visible" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/lytHistoryBar"
             android:layout_width="@dimen/_0dp"
             android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5dp"
             android:layout_weight="1"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
-            android:layout_marginTop="@dimen/_5dp"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <TextView
+                android:id="@+id/textBottomHistoryIcon"
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="@dimen/_30dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_home_black"
-                android:textStyle="bold"  />
+                android:background="@drawable/ic_home_colored"
+                android:textStyle="bold" />
 
             <TextView
-                android:visibility="visible"
                 android:id="@+id/textHistoryLable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:textColor="@color/color_black"
                 android:text="@string/history"
-                android:textSize="@dimen/fontTextSmallSize" />
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/fontTextSmallSize"
+                android:visibility="visible" />
         </LinearLayout>
 
     </LinearLayout>
