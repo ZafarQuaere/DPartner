@@ -3,7 +3,6 @@ package dfoode.partnerapplication.activities;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Context;
 import android.os.Bundle;
 
 import dfoode.partnerapplication.R;
@@ -11,7 +10,7 @@ import dfoode.partnerapplication.fragments.HomeFragment;
 import dfoode.partnerapplication.utils.LogUtils;
 import dfoode.partnerapplication.utils.Utils;
 
-public class MainActivity extends Activity {
+public class HomeActivity extends Activity {
 
     private Activity mContext;
     @Override
@@ -19,7 +18,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mContext = this;
-        Utils.moveToFragment(MainActivity.this, new HomeFragment(), null);
+        Utils.moveToFragment(HomeActivity.this, new HomeFragment(), null);
     }
 
     @Override
